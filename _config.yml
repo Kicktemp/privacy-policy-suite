@@ -11,7 +11,7 @@ description: ""
 author: "Stefan Wendhausen"
 baseurl: ""
 url: "http://privacy-policy-suite.kicktemp.com"
-googleanalyticss: 
+googleanalyticss:
 
 # Build settings
 markdown: kramdown
