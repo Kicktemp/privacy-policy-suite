@@ -1,35 +1,107 @@
-<section data-state="joomlablue">
-    <section>
-        <h1>1. Komponente</h1>
-        <h3 class="fragment fade">Datenschutz</h3>
-        <p class="fragment fade">Benutzer -> Datenschutz</p>
-    </section>
-    <section>
-        <img src="../images/datenschutz-dashboard.gif" />
-    </section>
-    <section>
-        <h3>Datenschutz: Kontrollzentrum</h3>
-        <p>Modul: Alle Anfragen</p>
-        <p>Zeigt eingegangene Anfragen von Benutzern an.</p>
-        <img src="../images/alle-anfragen.png" />
-    </section>
-    <section>
-        <h3>Datenschutz: Kontrollzentrum</h3>
-        <p>Modul: Statusprüfung</p>
-        <img src="../images/statuspruefung.png" height="400" />
-    </section>
-    <section>
-        <h3>Datenschutz: Kontrollzentrum</h3>
-        <p>Modul: Statusprüfung</p>
-        <p>Zeigt derzeit 4 Stati an.</p>
-        <ol>
-            <li>Datenschutzerklärung veröffentlicht</li>
-            <li>Menüpunkt Anfrageformular veröffentlicht</li>
-            <li>Wichtige Anfragen</li>
-            <li>E-Mail Funktion</li>
-        </ol>
-    </section>
-    <aside class="notes">
-        Die Datenschutzkomponente
-    </aside>
+<section>
+    <h1>Für Benutzer</h1>
+    <h3>Datenschutz- und Benutzeraktivitäts- Komponente</h3>
+</section>
+<section>
+    <img src="../images/datenschutz-dashboard.gif" />
+</section>
+<section>
+    <h1>Komponente</h1>
+    <h3>Datenschutz</h3>
+</section>
+<section>
+    <h3>Datenschutz: Kontrollzentrum</h3>
+    <p>Modul: Alle Anfragen</p>
+    <p>Zeigt eingegangene Anfragen von Benutzern an.</p>
+    <img src="../images/alle-anfragen.png" />
+</section>
+<section>
+    <h3>Datenschutz: Kontrollzentrum</h3>
+    <p>Modul: Alle Anfragen</p>
+    <p>Unterscheidung zwischen Anfragen um gespeicherte personenbezogene Benutzerdaten zu löschen<br />
+        bzw. diese per Export anzufordern.</p>
+</section>
+<section>
+    <h3>Voraussetzung um Anfragen zu erhalten</h3>
+    <p>Menüpunkt vom Menüeintragstyp:</p>
+    <img src="../images/menu_anfrageformular.png" />
+</section>
+<section>
+    <h3>Anfrageformular im Frontend</h3>
+    <img src="../images/anfrageformular.png" />
+</section>
+<section>
+    <h3>Anfragen im Backend</h3>
+    <img src="../images/anfragen-eingang.png" />
+</section>
+<section>
+    <h3>Status Wartend</h3>
+    <img src="../images/anfragen-wartend.png" />
+</section>
+<section>
+    <h3>Anfrager muss Anfrage per E-Mail erst bestätigen</h3>
+    <p class="fragment fade">DSGVO und so...</p>
+    <img class="fragment fade" src="../images/mail-anfragen.png" />
+</section>
+<section>
+    <h3>Weiterleitung auf ein Formular</h3>
+    <p class="fragement fade">Anfrager muss die E-Mail Adresse, welche die Anfrage gestellt hat eintragen.</p>
+    <img src="../images/anfrager-formular.png" />
+</section>
+<section>
+    <h3>Status Bestätigt</h3>
+    <img src="../images/anfrage-bestaetigt.png" />
+    <p class="fragment fade">Zwei Möglichkeiten: Daten direkt herunterladen als XML oder Datenexport per E-Mail (XML-Anhang) senden.</p>
+</section>
+<section>
+    <h3>Datenschutz: Informationsanfrage überprüfen</h3>
+    <img src="../images/informationsanfrage-ueberpruefen.png" />
+</section>
+<section>
+    <h3>Datenschutz: Kontrollzentrum</h3>
+    <p>Modul: Statusprüfung</p>
+    <img src="../images/statuspruefung.png" width="600" />
+</section>
+<section>
+    <h3>Datenschutz: Kontrollzentrum</h3>
+    <p>Modul: Statusprüfung</p>
+    <img src="../images/anfrageformular-gruen.png" width="600" />
+</section>
+<section>
+    <h3>Plugin: Benutzer - Nutzungsbedingungen</h3>
+    <p>Datenschutzerklärung verknüpfen mit Beitrag</p>
+    <img src="../images/benutzer-nutzungsbedingungen.png" />
+</section>
+<section>
+    <h3>Datenschutz: Kontrollzentrum</h3>
+    <p>Modul: Statusprüfung</p>
+    <img src="../images/statuspruefung-gruen.png" width="600" />
+</section>
+<section>
+    <h3>Anwendungsfall:</h3>
+    <ul>
+        <li class="fragment fade">Benutzer (registered) können sich im Frontend einloggen</li>
+        <li class="fragment fade">Die Benutzer sollen der Datenschutzerklärung oder den Nutzungsbedingunbgen zustimmen</li>
+    </ul>
+</section>
+<section>
+    <h3>Anwendungsfall:</h3>
+    <ul>
+        <li>Benutzer (registered) können sich im Frontend einloggen</li>
+        <li>Die Benutzer <del>sollen</del> müssen der Datenschutzerklärung oder den Nutzungsbedingunbgen zustimmen</li>
+    </ul>
+</section>
+<section>
+    <h3>Plugin: System - Datenschutz Zustimmung</h3>
+    <img src="../images/plugin_datenschutz-zustimmung.png" width="800"/>
+</section>
+<section>
+    <h3>Nach Login im Frontend</h3>
+    <p>Umleitung auf "Profil bearbeiten" bis Benutzer der Datenschutzerklärung zustimmt.</p>
+    <img src="../images/datenschutz-website.png" width="800" />
+</section>
+<section>
+    <h3>Plugin: System - Datenschutz Zustimmung</h3>
+    <p>Ablauf konfigurierbar</p>
+    <img src="../images/datenschutz-ablauf.png" width="500" />
 </section>

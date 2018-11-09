@@ -120,17 +120,22 @@ html.animationgif .reveal .slide-background
 
 
 .reveal a {
-  color: white !important;
-  text-decoration: underline !important;
-  font-style: italic;
+	color: white !important;
+	text-decoration: underline !important;
+	font-style: italic;
 }
 
 svg.kicktemp {
-  position: fixed;
-  bottom: 2em;
-  left: 2em;
-  width: 150px;
-  fill: #fff;
+	position: fixed;
+	bottom: 2em;
+	left: 2em;
+	width: 150px;
+	fill: #fff;
+}
+
+html.animationgif svg.kicktemp,
+html.hidekick svg.kicktemp {
+	display:none;
 }
 
 // Theme template ------------------------------
