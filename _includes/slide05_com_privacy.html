@@ -49,6 +49,10 @@
     <img src="../images/anfrager-formular.png" />
 </section>
 <section>
+    <h3>Anfragen im Backend</h3>
+    <img src="../images/anfragen-eingang2.png" />
+</section>
+<section>
     <h3>Status Bestätigt</h3>
     <img src="../images/anfrage-bestaetigt.png" />
     <p class="fragment fade">Zwei Möglichkeiten: Daten direkt herunterladen als XML oder Datenexport per E-Mail (XML-Anhang) senden.</p>
@@ -56,6 +60,49 @@
 <section>
     <h3>Datenschutz: Informationsanfrage überprüfen</h3>
     <img src="../images/informationsanfrage-ueberpruefen.png" />
+</section>
+<section data-state="joomlagreen hidekick">
+    <h3 class="noupper">Beispiel: Export</h3>
+    <pre class="stretch"><code class="hljs bash" data-trim data-fragment>
+        <?xml version="1.0" encoding="utf-8"?>
+        <data-export>
+          <domain name="users" description="joomla_users_data">
+            <item id="790">
+              <id>790</id>
+              <name>Stefan Wendhausen</name>
+              <username>kicktemp</username>
+              <email>sw@tec-promotion.de</email>
+              <block>0</block>
+              <sendEmail>0</sendEmail>
+              <registerDate>2018-11-09 21:18:16</registerDate>
+              <lastvisitDate>0000-00-00 00:00:00</lastvisitDate>
+              <activation/>
+              <params>{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}</params>
+              <lastResetTime>0000-00-00 00:00:00</lastResetTime>
+              <resetCount>0</resetCount>
+              <requireReset>0</requireReset>
+            </item>
+          </domain>
+          <domain name="user_notes" description="joomla_user_notes_data"/>
+          <domain name="user_profile" description="joomla_user_profile_data"/>
+          <domain name="users_user_custom_fields" description="joomla_users_user_custom_fields_data"/>
+          <domain name="user_contact" description="joomla_user_contact_data"/>
+          <domain name="contact_contact_custom_fields" description="joomla_contact_contact_custom_fields_data"/>
+          <domain name="user_content" description="joomla_user_content_data"/>
+          <domain name="content_article_custom_fields" description="joomla_content_article_custom_fields_data"/>
+          <domain name="user_messages" description="joomla_user_messages_data"/>
+          <domain name="consents" description="joomla_consent_data"/>
+        </data-export>
+
+    </code></pre>
+    <aside class="notes">
+
+    </aside>
+</section>
+<section>
+    <h3>Datenschutz: Zustimmungen</h3>
+    <p>Speichert alle Benutzerzustimmungen</p>
+    <img src="../images/zustimmung-log.png" />
 </section>
 <section>
     <h3>Datenschutz: Kontrollzentrum</h3>
@@ -78,22 +125,22 @@
     <img src="../images/statuspruefung-gruen.png" width="600" />
 </section>
 <section>
-    <h3>Anwendungsfall:</h3>
+    <h3>Anwendungsfall aus der Praxis:</h3>
     <ul>
         <li class="fragment fade">Benutzer (registered) können sich im Frontend einloggen</li>
-        <li class="fragment fade">Die Benutzer sollen der Datenschutzerklärung oder den Nutzungsbedingunbgen zustimmen</li>
-    </ul>
-</section>
-<section>
-    <h3>Anwendungsfall:</h3>
-    <ul>
-        <li>Benutzer (registered) können sich im Frontend einloggen</li>
-        <li>Die Benutzer <del>sollen</del> müssen der Datenschutzerklärung oder den Nutzungsbedingunbgen zustimmen</li>
+        <li class="fragment fade">Die Benutzer sollen der Datenschutzerklärung oder den Nutzungsbedingungen zustimmen</li>
     </ul>
 </section>
 <section>
     <h3>Plugin: System - Datenschutz Zustimmung</h3>
     <img src="../images/plugin_datenschutz-zustimmung.png" width="800"/>
+</section>
+<section>
+    <h3>Anwendungsfall aus der Praxis:</h3>
+    <ul>
+        <li>Benutzer (registered) können sich im Frontend einloggen</li>
+        <li>Die Benutzer <del>sollen</del> <strong>müssen</strong> der Datenschutzerklärung oder den Nutzungsbedingunbgen zustimmen</li>
+    </ul>
 </section>
 <section>
     <h3>Nach Login im Frontend</h3>
